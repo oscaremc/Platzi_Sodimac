@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
       backgroundColor: 'white',
       color: 'black',
     },
-    Button1:{
+    Button1: {
       paddingVertical: 10,
       borderBottomWidth: 4,
       borderColor: '#ccc',

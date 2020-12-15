@@ -37,5 +37,5 @@ const db = firebase.firestore()
 
 export default {
     firebaseService,
-    db
+    db,
 }

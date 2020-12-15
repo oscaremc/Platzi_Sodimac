@@ -5,7 +5,6 @@ import { createDrawerNavigator } from '@react-navigation/drawer'
 import Login from '../screens/Login/Login';
 import SingUp from '../screens/SingUp/SingUp';
 import Home from '../screens/Home/Home';
-import Louder from '../screens/Louder/Louder';
 import GetBanners from '../screens/Banners/GetBanners';
 import CreateBanners from '../screens/Banners/CreateBanners';
 import DeleteBanners from '../screens/Banners/DeleteBanners';
@@ -71,10 +70,9 @@ function MyDrawer() {
     <NavigationContainer>
     
       <Drawer.Navigator drawerContent={(props) => <Menu {...props} />}>
-        <Drawer.Screen name="Louder" component={Louder} />
-        <Drawer.Screen name="Home" component={Home}/>
         <Drawer.Screen name="Login" component={Login} />
         <Drawer.Screen name="SingUp" component={SingUp} />
+        <Drawer.Screen name="Home" component={Home}/>
         <Drawer.Screen name="CreateBanners" component={CreateBanners} />
         <Drawer.Screen name="GetBanners" component={GetBanners} />
         <Drawer.Screen name="DeleteBanners" component={DeleteBanners} />
