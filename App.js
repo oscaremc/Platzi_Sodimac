@@ -5,9 +5,7 @@ import MyDrawer from './myDrawer/index';
 export default function App() {
 
         return (
-
                         <MyDrawer />
-
 
         )
 

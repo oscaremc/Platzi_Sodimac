@@ -40,7 +40,7 @@ const Login = ({navigation}) => {
           <Text style= {styles.TextButton  }>Login</Text>
         </TouchableHighlight>
         <TouchableHighlight style= {styles.Button1} onPress = {() => navigation.navigate('SingUp')}>
-          <Text style= {styles.TextButton }>Sing Up </Text>
+          <Text style= {styles.TextButton }>Sing Up</Text>
         </TouchableHighlight>
       </View>
     );

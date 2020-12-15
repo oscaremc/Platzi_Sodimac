@@ -1,13 +1,20 @@
 
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Button, TextInput, View } from 'react-native';
 import styles from './styles'
 
-const Home = () => {
+
+
+function Home({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text>Bienvenidos a Home</Text>
+    <View style={styles.Homecontainer}>
+      <Button   onPress={() => navigation.navigate('CreateBanners')} title="CreateBarnners"/>
+      
+      <Button  style= {styles.Button} onPress={() => navigation.navigate('GetBanners')} title="GetBarnners"/>
     </View>
+    
+    
   );
 }
+
 export default Home;
