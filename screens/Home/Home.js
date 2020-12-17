@@ -1,20 +1,30 @@
 
-import React from 'react';
-import { Button, TextInput, View } from 'react-native';
-import styles from './styles'
+import React, { useState, useEffect } from 'react';
+import {  View, Text } from 'react-native';
 
+import firebase from '../../services/firebase';
 
+const Home = () => {
+ const [name, SetName ] =  useState('') 
 
-function Home({ navigation }) {
+ useEffect(() =>{
+
+(
+  async () => {
+    try {
+      const nameData = await firebase.firebaseService.getUserName();
+      SetName(nameData);
+    } catch (e) {
+      alert(e);
+    }
+  }
+)()
+ }, [])
   return (
-    <View style={styles.Homecontainer}>
-      <Button   onPress={() => navigation.navigate('CreateBanners')} title="CreateBarnners"/>
-      
-      <Button  style= {styles.Button} onPress={() => navigation.navigate('GetBanners')} title="GetBarnners"/>
+    <View style={{marginTop: -50}}>
+      <Text> Welcome { name }</Text>
     </View>
-    
-    
-  );
-}
+  )
 
+}
 export default Home;

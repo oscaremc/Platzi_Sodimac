@@ -30,6 +30,9 @@ class Firebase {
         })
 
     }
+    getUserName = () => {
+        return this.auth.currentUser.displayName
+    }
 }
 
 const firebaseService = new Firebase()

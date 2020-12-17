@@ -6,6 +6,7 @@ import styles from './styles'
 
 
 
+
 const SingUp = ({navigation}) => {
   const [name,setName] = useState('')
   const [user,setUser] = useState('')
@@ -37,6 +38,7 @@ const createUser  = async () => {
           <TextInput
           placeholder = "Password"
           style= {styles.InputText}
+          keyboardType='numeric'
           value={pass}
           onChange={(e) => setPass(e.nativeEvent.text)}
           />
