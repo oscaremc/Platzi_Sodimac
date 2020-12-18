@@ -34,13 +34,13 @@ const CreateBanners = () => {
           "banners/createBanners",
           infoToSend
         );
-
         console.warn(response);
+        props.navigation.navigate('Home')
       } catch (error) {
         console.log(error);
       }
     }
-    props.navigation.navigate('Login');
+    
   };
   return (
     <ScrollView>
@@ -49,8 +49,6 @@ const CreateBanners = () => {
           style={styles.InputText}
           placeholder="ActionType"
           onChangeText={(value) => handleChangeText("ActionType", value)}
-          value={this.text}
-          clearButtonMode="always"
         />
       </View>
       <View style={styles.container}>

@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
 import {  View, Text } from 'react-native';
-
 import firebase from '../../services/firebase';
 
 const Home = () => {
@@ -22,7 +21,7 @@ const Home = () => {
  }, [])
   return (
     <View style={{marginTop: -50}}>
-      <Text> Welcome { name }</Text>
+      <Text> Welcome {name}</Text>
     </View>
   )
 

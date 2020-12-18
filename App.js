@@ -274,7 +274,7 @@ export default function App() {
       >
         <Drawer.Screen name="MenuTab" component={TabNavigator} />
         <Drawer.Screen name="SingUp" component={singUp} />
-        <Drawer.Screen name="Home" component={Home} />
+        {/* <Drawer.Screen name="Main" component={Home} /> */}
         <Drawer.Screen name="CreateBanners" component={CreateBanners} />
         <Drawer.Screen name="GetBanners" component={GetBanners} />
         <Drawer.Screen name="Notifications" component={NotificationsScreen} />
